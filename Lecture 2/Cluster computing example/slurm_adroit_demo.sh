@@ -8,4 +8,4 @@
 ##SBATCH --mail-user=lmann@princeton.edu
 cd /home/lmann/research_projects/hpc_adroit_demo
 module load julia/1.7.1
-srun -n 12 julia main.jl
+srun -n 1 julia helloworld.jl
