@@ -1,0 +1,40 @@
+name = "JuliaTutorial"
+uuid = "0d3209f5-ffcb-454d-ad0c-7d6cf403844e"
+authors = ["Lukas Mann"]
+version = "1.0.0-DEV"
+
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
+DifferentialEquations = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
+Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
+Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+Pandas = "eadc2687-ae89-51f9-a5d9-86b5a6373a9c"
+Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
+ProfileView = "c46f51b8-102a-5cf2-8d2c-8597cb0e0da7"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+Rebugger = "ee283ea6-eecd-56e3-beb3-83eb4d3c31e9"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+TimerOutputs = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
+Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

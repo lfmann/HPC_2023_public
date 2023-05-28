@@ -96,6 +96,3 @@ import Base: +
 methods(+)
 
 household1 + household2
-
-
-
