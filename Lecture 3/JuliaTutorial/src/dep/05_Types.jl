@@ -76,8 +76,8 @@ struct ParPoint{T}
     x::T
     y::T
 end
-Point(1, 3) # T is inferred as `Int64`
-Point(1, 3.0) # errors because all cases of T must be of the same concrete type
+ParPoint(1, 3) # T is inferred as `Int64`
+ParPoint(1, 3.0) # errors because all cases of T must be of the same concrete type
 
 ##############################
 # More on parametric types, method extensions and type conversion/promotion

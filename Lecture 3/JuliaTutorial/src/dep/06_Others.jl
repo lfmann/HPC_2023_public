@@ -8,9 +8,9 @@ end
 typeof(a)   # returns Expr
 eval(a)
 
-name = "Jesus"
+name = "Lukas"
 a  = :(name*" likes economics")
-eval(a) # returns "Jesus likes economics"
+eval(a) # returns "Lukas likes economics"
 name = "Pablo"
 eval(a) # returns "Pablo likes economics"
 
@@ -24,8 +24,6 @@ end
 ex = math_expr(:+, 1, Expr(:call, :*, 4, 5))
 eval(ex)
 
-ex = math_expr(:*, 1, Expr(:call, :*, 4, 5))
-eval(ex)
 
 #############################
 # Strings
@@ -54,7 +52,7 @@ using Printf
 # first an integer, second a float with two decimals, third a character
 @printf("%d %.2f % c\n", 32, 34.51, 'a')
 # Now a composed string
-name = "Jesus"
+name = "Lukas"
 @printf("%s likes economics \n", name)
 # It will print with color
 printstyled(a;color=:red)

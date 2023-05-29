@@ -104,6 +104,7 @@ Zygote  # Automatic differentiation
 ForwardDiff
 JuMP    # Numerical optimization
 Optim   # Numerical optimization
+NLOpt
 Parameters
 DifferentialEquations
 CSV

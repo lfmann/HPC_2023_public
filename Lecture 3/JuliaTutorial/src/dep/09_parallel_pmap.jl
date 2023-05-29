@@ -9,20 +9,16 @@
 #         House-keeping          #
 #--------------------------------#
 
-using Pkg
-Pkg.add("Distributions")
-Pkg.add("Compat")
-
 using Distributed
 using Distributions
-using Compat.Dates
+using Dates
 
 #--------------------------------#
 #         Initialization         #
 #--------------------------------#
 
 # Number of cores/workers
-isassigned(ARGS, 1) ? n_procs = parse(Int, ARGS[1]) : n_procs = 1
+isassigned(ARGS, 1) ? n_procs = parse(Int, ARGS[1]) : n_procs = 8
 addprocs(n_procs - 1)
 @info "Running a julia instance with $(nprocs()) process(es)"
 

@@ -82,9 +82,9 @@ b*c # this delivers 0.0
 &&  # and
 ||  # or
 ==  # is equal?
-!== # is not equal?
+!= # is not equal?
 ===     # is equal? (enforcing type 2===2.0 is false)
-!===    # is not equal? (enforcing type)
+!==    # is not equal? (enforcing type)
 >   # bigger than
 >=  # bigger or equal than
 <   # less than
@@ -105,7 +105,7 @@ xor # bitwise xor (also typed by \xor or \veebar + tab)
 #############################
 
 # functions are first-class citizens
-a = [exp, abs]
+a = [exp, abs, +]
 a[1](3)
 
 # operators are functions
@@ -132,7 +132,7 @@ end
 
 # passing functions (also by sharing!!!!!!!!!)
 foo1 = foo
-multiplication  = *
+multiplication = *
 
 # multiple dispatch
 methods(foo)
@@ -234,7 +234,7 @@ function foo2(var1)
     end
     return foo3
 end
-foo2 = foo(1)   # creates a function foo2 that produces 1+var2
+foo10 = foo2(1)   # creates a function foo2 that produces 1+var2
 foo5 = foo(2)   # creates a function foo3 that produces 2+var2
 
 x -> x^2            # anonymous function
@@ -299,4 +299,4 @@ a = [1,5,8,10,12]
 macro welcome(name)
     return :(println("Hello, ", $name, "!"))
 end
-@welcome "Lukas"
+@welcome "class"

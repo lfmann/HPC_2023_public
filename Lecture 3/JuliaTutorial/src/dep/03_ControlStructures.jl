@@ -44,7 +44,7 @@ for i in 1:0.1:5
     println(i)
 end
 
-a = [1, 2, 3]
+a = [1, 2, 4]
 for i in a
     println(i)
 end
@@ -121,12 +121,19 @@ function fast2(n)
     return A
 end
 
+function fast3(n)
+    A = Matrix{Float64}(undef, n, n)
+    for idx in eachindex(A)
+        A[idx] = rand()
+    end
+    return A
+end
 
 
 # Comprenhensions
 [n^2 for n in 1:5]      # basic comprehensions
 Float64[n^2 for n in 1:5]   # comprehension fixing type
-[x+y for x in 1:3, y = 1:4]
+[x+y+z-a^2 for x in 1:3, y = 1:4, z=1:4, a=1:3]
 
 # Generators
 sum(1/n^2 for n = 1:1000)
@@ -139,6 +146,6 @@ fast(n) = sum(1/i^2 for i = 1:n)
 
 i = 0
 while i <= 5
-        println(i)
+    println(i)
     i += 1
 end

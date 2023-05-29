@@ -9,13 +9,10 @@
 #         House-keeping          #
 #--------------------------------#
 
-using Pkg
-Pkg.add("Distributions")
-Pkg.add("Compat")
 
 using Distributed
 using Distributions
-using Compat.Dates
+using Dates
 using SharedArrays
 
 #--------------------------------#
